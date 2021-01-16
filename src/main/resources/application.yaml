@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  flyway:
+    enabled: false
+  datasource:
+    initialization-mode: always
+    platform: postgresql
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/weather
+    username: postgres
+    password: 1
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+springfox:
+  documentation:
+    swagger:
+      v2:
+        use-model-v3: true
